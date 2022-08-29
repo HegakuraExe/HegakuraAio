@@ -14,7 +14,7 @@ dp = Dispatcher(bot)
 logging.basicConfig(level = logging.INFO)
 
 #handler
-@dp.message_handler(commands=['profile', 'info', 'infa'], commands_prefixes='/!.#')
+@dp.message_handler(commands=['profile', 'info', 'infa'], commands_prefix='/!.#')
 async def hegakura_profile(message: types.Message):
 	user_id = message.from_user.id
 	user_first_name = message.from_user.first_name
